@@ -240,8 +240,6 @@ function output = ONS_HONES(x1, data, f, df, T, delta, beta_ons, eps, init_eps)
         A = A + g * g';
         
         %% ONS
-        %l = A * x + delta * (1 + 1/beta_ons) * g - r_equiv;
-        %% ONS variant        
         l = delta * (1 + 1/beta_ons) * g;
         
         r_equiv = l + r_equiv;
